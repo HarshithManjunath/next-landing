@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import InfoSection from "./ui/components/info";
 import Linkcard from "./ui/components/linkcards";
 

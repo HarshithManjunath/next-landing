@@ -14,12 +14,12 @@ export default function Linkcard() {
     },
   ];
   return (
-    <div className="links-cards-container flex space-x-3 px-3  md:px-2.5 lg:px-5">
+    <div className="links-cards-container flex space-x-3">
       {links?.map((link, i) => (
         <div key={i}>
           <a href={link?.link} target="_blank" rel="noopener noreferrer">
             <div
-              className={`link w-20 flex justify-center border-2 border-slate-500 px-3 py-2 rounded-lg bg-gray-900 cursor-pointer hover:bg-gray-800`}
+              className={`link w-20 flex justify-center border-2 border-cardbordercolor px-3 py-2 rounded-lg bg-cardbg cursor-pointer hover:bg-gray-800`}
             >
               <div className="logo">
                 <Image

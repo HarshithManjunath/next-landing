@@ -1,27 +1,24 @@
 // import Image from "next/image";
+import Expcard from "./ui/components/expcard";
 import InfoSection from "./ui/components/info";
 import Linkcard from "./ui/components/linkcards";
+import { infopara, experiencedata } from "./lib/data";
 
 export default function Home() {
   return (
     // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-    <div className="items-center min-h-screen">
-      <InfoSection
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
-sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
-recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
-minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit 
-quibusdam sed amet tempora!"
-      />
-      <Linkcard />
-      {/* Test  */}
+    <div className="items-center min-h-screen px-3 md:px-2.5 lg:p-5 space-y-3">
+      <div className="summary-section">
+        <InfoSection
+          text={infopara}
+        />
+      </div>
+      <div className="links-section">
+        <Linkcard />
+      </div>
+      <div className="exp-section">
+        <Expcard data={experiencedata} />
+      </div>
       {/* <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"

@@ -7,9 +7,13 @@ export default function Header() {
     <div
       className={`${geistMono.className} antialiased header flex items-center justify-between w-100 px-3  md:px-2.5 lg:px-5 py-5`}
     >
-      <div className={` name text-3xl lg:text-3xl font-bold cursor-pointer`}>
+      <div
+        className={` name text-3xl lg:text-3xl font-bold cursor-pointer relative w-[max-content]
+before:absolute before:inset-0 before:bg-[#1b1917]
+before:animate-typewriter`}
+      >
         Astro.js
-        <span className="blinking-cursor font-bold">_</span>
+        {/* <span className="blinking-cursor font-bold">_</span> */}
       </div>
       <div className="dropdown block md:hidden">
         <Bars3Icon className="h-8" />

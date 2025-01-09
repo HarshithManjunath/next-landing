@@ -1,4 +1,9 @@
 import type { Config } from "tailwindcss";
+import scrollbarHide from "tailwind-scrollbar-hide";
+
+// Tailwind plugin repos
+// https://github.com/reslear/tailwind-scrollbar-hide
+// https://github.com/tailwindlabs/tailwindcss-line-clamp/
 
 export default {
   content: [
@@ -33,7 +38,7 @@ export default {
       },
     },
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+  plugins: [scrollbarHide, require("@tailwindcss/line-clamp")],
 } satisfies Config;
 
 /* HIGHLIGHT TEXT COLOR #AC5126 */

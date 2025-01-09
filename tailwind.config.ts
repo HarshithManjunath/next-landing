@@ -27,7 +27,8 @@ export default {
         cardbordercolor: "#555863",
       },
       animation: {
-        typewriter: "typewriter 1.5s steps(8) forwards",
+        typewriterheader: "typewriter 1.5s steps(8) forwards",
+        typewriterexpheader: "typewriter 1.5s steps(10) forwards",
       },
       keyframes: {
         typewriter: {

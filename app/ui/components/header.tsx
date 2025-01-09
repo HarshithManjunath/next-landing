@@ -10,7 +10,7 @@ export default function Header() {
       <div
         className={` name text-3xl lg:text-3xl font-bold cursor-pointer relative w-[max-content]
 before:absolute before:inset-0 before:bg-[#1b1917]
-before:animate-typewriter`}
+before:animate-typewriterheader`}
       >
         Astro.js
         {/* <span className="blinking-cursor font-bold">_</span> */}

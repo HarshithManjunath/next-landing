@@ -17,7 +17,13 @@ export default function Home() {
         <Linkcard />
       </div>
       <div className="exp-section">
-        <div className={`${geistMono.className} exp-heading `}>Expecto</div>
+        <div
+          className={`${geistMono.className} exp-heading font-bold text-2xl md:text-xl pb-3 relative w-[max-content]
+before:absolute before:inset-0 before:bg-[#1b1917]
+before:animate-typewriterexpheader`}
+        >
+          Experience
+        </div>
         <Expcard data={experiencedata} />
       </div>
       {/* <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">

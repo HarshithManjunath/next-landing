@@ -20,7 +20,7 @@ export default function Expcard({ data }: Expcardtype) {
             className="exp-cards h-72 min-w-72 md:max-w-80 p-3 border-2 border-cardbordercolor rounded-lg bg-cardbg"
             key={i}
           >
-            <div className="exp-title font-extrabold text-xl truncate ...">
+            <div className="exp-title font-normal text-2xl md:text-xl truncate ...">
               {item?.title}
             </div>
             <div className="exp-subtitle">{item?.subtitle}</div>

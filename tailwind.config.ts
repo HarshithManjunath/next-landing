@@ -22,7 +22,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         text: "#D6D6D8",
-        texthighlight: "#D6D6D8",
+        texthighlight: "#AC5126",
         cardbg: "#262424",
         cardbordercolor: "#555863",
       },

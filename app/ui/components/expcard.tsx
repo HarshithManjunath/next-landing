@@ -27,7 +27,7 @@ export default function Expcard({ data }: Expcardtype) {
             <div className="exp-exp-details md:text-sm lg:text-base line-clamp-8">
               {item?.text}
             </div>
-            <div className="readmr w-100 flex justify-end items-center space-x-1.5">
+            <div className="readmr w-100 flex justify-end items-center space-x-1.5 cursor-pointer">
               <span>read more</span> <ArrowTrendingUpIcon className="h-5" />
             </div>
           </div>
